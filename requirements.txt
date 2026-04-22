@@ -1,4 +1,27 @@
-fastapi
-uvicorn[standard]
-python-multipart
-pillow
+# BarberVision Backend — dependencias
+# ------------------------------------
+# IMPORTANTE: requiere Python 3.11 o 3.12
+# MediaPipe NO soporta Python 3.14 todavía.
+#
+# Cómo crear el entorno correcto:
+#   pyenv install 3.12.4          # o usar uv / conda
+#   pyenv local 3.12.4
+#   python -m venv venv
+#   source venv/bin/activate      # Windows: venv\Scripts\activate
+#   pip install -r requirements.txt
+
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+python-multipart>=0.0.9
+
+# MediaPipe Tasks API (nueva — reemplaza mp.solutions)
+mediapipe>=0.10.14
+
+# Visión
+opencv-python>=4.10.0
+Pillow>=10.3.0
+numpy>=1.26.0
+
+
+supabase 
+python-dotenv
