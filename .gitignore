@@ -1,9 +1,28 @@
-.env
-__pycache__/
-*.pyc
+# Entorno virtual
 venv/
 env312/
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Archivos subidos y generados
 uploads/
 outputs/
+
+# Modelos de MediaPipe (se descargan automáticamente)
 app/models/*.task
 app/models/*.tflite
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
